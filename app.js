@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-mongoose.connect("YOUR_MONGODB_ATLAS_CONNECTION_URL", { useNewUrlParser: true , useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://mustalipcan:<password>@cluster0.4kt520y.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true , useUnifiedTopology: true });
 
 const blogSchema = {
   title: String,
